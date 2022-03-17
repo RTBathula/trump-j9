@@ -1,0 +1,41 @@
+@import '../../assets/scss/custom';
+@import '../../assets/scss/variables';
+@import '../../assets/scss/viewport';
+
+.header {
+	height: $headerHeight;
+	@extend .full-screen;
+	display: flex;
+	justify-content: center;
+
+	&__app-screen {
+		@extend .app-screen;		
+		padding: 10px $padding;
+		background-color: $primary;
+
+		display: flex;
+		align-items: center;
+
+		@media only screen and (max-width: 576px) {
+			width: 100%;
+		}		
+	}
+
+	&__homelink {
+		font-size: 18px;		
+		text-decoration: none;
+		color: white;
+	}
+
+	&__links {
+		margin-left: 20px;		
+
+		& .link {
+			color: white;
+
+			&:not(:first-child) {
+				margin-left: 18px;
+			}
+		}
+	}
+}

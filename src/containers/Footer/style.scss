@@ -1,0 +1,15 @@
+@import '../../assets/scss/custom';
+@import '../../assets/scss/variables';
+
+.footer {
+	@extend .full-screen;
+	display: flex;
+	justify-content: center;
+
+	&__app-screen {
+		@extend .app-screen;		
+		padding: $padding;
+		background-color: $quaternary;		
+		color: white;
+	}
+}

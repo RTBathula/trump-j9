@@ -1,0 +1,50 @@
+{
+  "name": "Trump-J9",
+  "version": "0.0.1",
+  "description": "Trump J9",
+  "productName": "Trump J9",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node --experimental-modules server.js",
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "test:unit": "vue-cli-service test:unit",
+    "test:e2e": "vue-cli-service test:e2e"
+  },
+  "dependencies": {
+    "axios": "^0.26.0",
+    "body-parser": "^1.19.0",
+    "bootstrap": "^4.5.3",
+    "bootstrap-vue": "^2.21.2",
+    "cardsJS": "^1.1.1",
+    "cors": "^2.8.5",
+    "dotenv": "^8.1.0",
+    "express": "^4.17.1",
+    "human-readable-ids": "^1.0.4",
+    "js-cookie": "^3.0.1",
+    "moment": "^2.29.1",
+    "mongoose": "^5.9.11",
+    "shortid": "^2.2.16",
+    "uuid": "^8.3.2",
+    "vue": "^2.6.11",
+    "vue-router": "^3.0.6",
+    "vuex": "^3.1.2"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.8.0",
+    "@vue/cli-plugin-e2e-nightwatch": "^3.8.0",
+    "@vue/cli-plugin-eslint": "^3.8.0",
+    "@vue/cli-plugin-unit-jest": "^3.8.0",
+    "@vue/cli-service": "^3.8.4",
+    "@vue/test-utils": "1.0.0-beta.29",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-jest": "^23.6.0",
+    "growl": "^1.10.5",
+    "https-proxy-agent": "^2.2.1",
+    "node-sass": "^4.12.0",
+    "sass-loader": "^7.1.0",
+    "vue-template-compiler": "^2.6.11"
+  }
+}

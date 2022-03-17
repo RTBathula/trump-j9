@@ -1,0 +1,11 @@
+version: '2'
+services:
+  trump-j9:
+    build: 
+      context: .
+      dockerfile: Dockerfile      
+    ports:
+      - "8400:8400"
+    env_file:
+      - .env
+          

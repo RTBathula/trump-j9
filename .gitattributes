@@ -1,0 +1,2 @@
+*.tfvars filter=git-crypt diff=git-crypt
+*.pub filter=git-crypt diff=git-crypt

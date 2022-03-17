@@ -1,0 +1,6 @@
+// Viewport of the game variables
+$total: 100vh;
+$headerHeight: 6vh;
+$topUserBlock: 22.2vh;
+$bottomUserBlock: 24vh;
+$midUserWrap: $total - ($headerHeight + $topUserBlock + $bottomUserBlock);

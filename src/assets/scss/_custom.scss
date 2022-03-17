@@ -1,0 +1,56 @@
+.b-dropdown {
+  & button {
+    padding: 1px 10px;
+    background-color: white;
+    color: black;
+    font-size: 14px;    
+  }
+
+  & #dropdown-1__BV_button_ {
+    min-width: 220px;
+    background-color: white;
+    color: black;
+
+    &:hover {
+      background-color: white;
+      color: black;
+    }
+  }
+
+  & #dropdown-1__BV_toggle_ {
+    background-color: white;
+    color: black;
+  }
+
+  & ul {
+    width: 100%;    
+
+    & li {
+      width: 100%;
+      font-size: 13px;
+
+      & a.dropdown-item {
+        white-space: wrap;       
+        word-wrap: break-word;
+      }
+    }    
+  } 
+}
+
+.dropdown-item:hover, .dropdown-item:focus {
+  background-color: #b2c4d5;
+}
+
+.full-screen {
+  width: 100%;
+}
+
+.app-screen {
+  width: 80%;
+}
+
+
+.card-shadow {
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}

@@ -1,0 +1,68 @@
+@import '../../assets/scss/style';
+
+.page {
+	width: 100%;
+	height: 100%;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px 20px 60px 20px;
+
+	&__pairup-title {
+		font-size: 22px;
+		margin-bottom: 20px;
+
+		display: flex;
+		justify-content: center;
+
+		@media only screen and (max-width: 576px) {
+			justify-content: flex-start;
+		}			
+	}
+
+	&__pairup-pairs {
+		display: flex;
+
+		@media only screen and (max-width: 576px) {
+			display: block;
+		}		
+	}
+
+	&__team {
+		&:not(:first-child) {
+			margin-left: 20px;
+
+			@media only screen and (max-width: 576px) {
+				margin-left: 0px;
+				margin-top: 20px;
+			}
+		}
+	}
+
+	&__bid-btn {
+		margin-top: 20px;
+		display: flex;
+		justify-content: flex-end;
+
+		@media only screen and (max-width: 576px) {
+			justify-content: center;
+		}
+
+		& button {
+			background-color: #d40404;
+			color: white;
+			padding: 5px 12px;
+
+			&.disabled {
+				background-color: #b46262;
+			}
+
+			@media only screen and (max-width: 576px) {
+				width: 100%;
+			}			
+		}
+	}
+}
+
+
