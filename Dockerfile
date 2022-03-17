@@ -15,10 +15,10 @@ WORKDIR /usr/src/app
 COPY --from=build /usr/src/trump-j9/dist ./dist
 COPY --from=build /usr/src/trump-j9/server.js .
 COPY --from=build /usr/src/trump-j9/entrypoint.sh .
+COPY --from=build /usr/src/trump-j9/docker-build-package.json .
 
-RUN npm init -y -f &> /dev/null && \
-	npm install express body-parser cors dotenv \
-		mongoose human-readable-ids moment
+RUN mv docker-build-package.json package.json
+RUN npm install
 		
 ENV STATIC_DIR "/usr/src/app/dist"
 
