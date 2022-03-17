@@ -1,5 +1,5 @@
 import Group from '../models/group.js';
-import { findGroup, createGroup, addUserToGroup } from '../models/group.js';
+import { findGroup, createGroup, addUserToGroup } from './user-help.js';
 
 export const createOrJoinGroup = (body) => {
 	if (!body.groupName) {
